@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="warehouse_title">Quản lý kho hàng</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="username_label">Tên đăng nhập</string>
+    <string name="username_hint">Nhập tên đăng nhập</string>
+    <string name="password_label">Mật khẩu</string>
+    <string name="password_hint">Nhập mật khẩu</string>
+    <string name="inventory_title">Sản phẩm trong kho</string>
+    <string name="overview">Tổng quan kho</string>
+    <string name="inventory_empty">Kho chưa có sản phẩm</string>
+    <string name="add_product_label">Thêm sản phẩm</string>
+    <string name="product_name_label">Tên sản phẩm</string>
+    <string name="product_name_hint">Nhập tên sản phẩm</string>
+    <string name="price_label">Giá bán (đồng)</string>
+    <string name="price_hint">Nhập giá bán</string>
+    <string name="quantity_label">Số lượng tồn</string>
+    <string name="quantity_hint">Nhập số lượng</string>
+    <string name="category_prompt">Chọn loại sản phẩm</string>
+    <string name="category_label">Loại sản phẩm</string>
+    <string name="active_label">Đang kinh doanh</string>
+    <string name="description_label">Mô tả sản phẩm</string>
+    <string name="description_hint">Nhập mô tả (không bắt buộc)</string>
+    <string name="save_label">Lưu sản phẩm</string>
+    <string name="product_detail_title">Chi tiết sản phẩm</string>
+    <string name="receive_label">Nhập thêm 1</string>
+    <string name="sell_label">Bán 1</string>
+    <string name="delete_label">Xóa sản phẩm</string>
+    <string name="back_label">Quay lại</string>
+    <string name="low_stock_label">Sắp hết hàng</string>
+</resources>

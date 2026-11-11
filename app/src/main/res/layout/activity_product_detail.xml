@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            style="@style/KhoTitle"
+            android:text="@string/product_detail_title"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/kho_hero"
+            android:padding="22dp">
+
+            <TextView
+                android:id="@+id/detail_name"
+                style="@style/KhoTitle"
+                android:textColor="@color/paper" />
+
+            <TextView
+                android:id="@+id/detail_category"
+                style="@style/KhoBody"
+                android:textColor="@color/paper"
+                android:layout_marginTop="7dp" />
+
+            <TextView
+                android:id="@+id/detail_active"
+                style="@style/KhoBody"
+                android:textColor="@color/mint"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/kho_card"
+            android:padding="18dp"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/detail_price"
+                style="@style/KhoBody" />
+
+            <TextView
+                android:id="@+id/detail_quantity"
+                style="@style/KhoBody"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/detail_warning"
+                style="@style/KhoWarning"
+                android:text="@string/low_stock_label" />
+
+            <TextView
+                android:id="@+id/detail_value"
+                style="@style/KhoBody"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:id="@+id/receive"
+                    style="@style/KhoButton"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/receive_label" />
+
+                <Button
+                    android:id="@+id/sell"
+                    style="@style/KhoButtonSecondary"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/sell_label" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/kho_card"
+            android:padding="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                style="@style/KhoSection"
+                android:text="@string/description_label"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/detail_description"
+                style="@style/KhoBody"
+                android:textColor="@color/muted"
+                android:lineSpacingExtra="3dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/go_back"
+            style="@style/KhoButtonSecondary"
+            android:text="@string/back_label" />
+
+        <Button
+            android:id="@+id/delete"
+            style="@style/KhoButtonDelete"
+            android:text="@string/delete_label"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>

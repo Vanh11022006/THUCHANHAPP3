@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp">
+
+    <TextView
+        style="@style/KhoTitle"
+        android:text="@string/inventory_title"
+        android:layout_marginBottom="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/kho_stats"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/KhoSection"
+            android:text="@string/overview"
+            android:textColor="@color/primary_dark"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/statistics"
+            style="@style/KhoBody"
+            android:lineSpacingExtra="4dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ListView
+            android:id="@+id/product_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:clipToPadding="false"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/empty_list"
+            style="@style/KhoBody"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/inventory_empty"
+            android:textColor="@color/muted"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/add_product"
+        style="@style/KhoButton"
+        android:text="@string/add_product_label" />
+</LinearLayout>
